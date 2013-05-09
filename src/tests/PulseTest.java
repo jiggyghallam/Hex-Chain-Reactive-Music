@@ -1,14 +1,14 @@
 package tests;
 
 import static org.junit.Assert.*;
+import hex.Node;
+import hex.Pulse;
+import hex.SoundSequencer;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import reactogon.Node;
-import reactogon.Pulse;
-import reactogon.SoundSequencer;
 
 public class PulseTest {
 	private Node n=new Node(1,2);

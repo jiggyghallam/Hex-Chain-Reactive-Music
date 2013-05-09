@@ -1,6 +1,6 @@
 package tests;
 
-import reactogon.*;
+import hex.*;
 import static org.junit.Assert.*;
 
 import org.junit.Test;

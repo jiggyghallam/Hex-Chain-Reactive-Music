@@ -2,14 +2,15 @@ package tests;
 
 import static org.junit.Assert.*;
 
+import hex.HexCell;
+import hex.ImageLoader;
+import hex.Tile;
+
 import java.awt.image.BufferedImage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import reactogon.HexCell;
-import reactogon.ImageLoader;
-import reactogon.Tile;
 
 public class HexCellTest2 {
 	
