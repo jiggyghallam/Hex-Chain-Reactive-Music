@@ -1,0 +1,121 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+
+\begin{titlepage}
+\title{G52GRP Interim Group Report\\HEX - A Chain Reactive Music Generator }
+\author{Group NHN2}
+\date{7th December 2012}
+\maketitle
+\begin{center}
+Supervisor: Dr. Henrik Nilsson\\
+\bigskip
+\begin{tabular}{ l c r }
+  S.Cooke & - & skc01u \\
+  R. Fulton & - & rxf01u \\
+  G. Hallam & - & goh01u \\
+  D. Huo & - & psydh2 \\
+  M. Tawafig & - & mxt41u \\
+  J. Sherry & - & jxs41u \\  
+\end{tabular}
+\end{center}
+\end{titlepage}
+
+\section{Project Description}
+
+The ReacTogon is a chain reactive musical device for the performance of electronic music in real time, based on the 'Harmonic Table' note layout. We aim to emulate this piece of hardware by creating software based on the same principals, affording a completely novel musical experience. The Harmonic Table has been understood since the 18th century, but rarely implemented until the late 20th century, most notably by C-Thru Music. While such devices are in high demand, their prices make them inaccessible to most. A multi-platform program that utilises the Harmonic Table layout will allow widespread access to this alternative musical interface.\\
+\\
+To this end, we have written a Java applet that implements the harmonic table in a similar manner. Control is provided through the use of seven operators or 'counters', namely \textit{Play}, \textit{Stop}, \textit{Change} and \textit{Explode}. The latter three have active and inactive states which dictate whether they play a note or not during an interaction. In addition to this there are buttons and sliders to change tempo and instrument. There are also multiple 'tabs' of grids for the creation of harmony and a multi textured composition.\\
+\\
+Our software is designed with a PC and touch screen in mind, as the tactile nature of interaction greatly lends itself to the interface. This said, the application will still run with a standard mouse and indeed, the nature of a Java applet allows portability and support for other operating systems.
+
+\section{Backround Information and Research}
+
+\subsection{Existing Systems}
+
+\subsection{Market Research}
+
+\subsection{Technical Research}
+
+\subsubsection{Working with Hexagons}
+The immediate area of research, on beginning coding was how to generate and work with a grid of hexagons. There are few operations one might need to perform: finding hexagon's position by its index in the grid; picking a hexagon by mouse; finding neighbor cells; finding hexagon's corner coordinates etc.
+\begin{center}
+\includegraphics[scale=1]{hex_single.png}\\
+Fig. 1\\
+\end{center}
+Using simple properties of hexagons, as shown in \textit{Fig. 1},
+
+\section{Requirements Specification}
+
+The game has several important key features which need to be followed and implemented; they can be described in the functional, in other words, definitions of what the system must \textit{do}; and non-function requirements, definitions of how a system is supposed to \textit{be}. These are detailed henceforth:
+\subsection{Functional Requirements}
+\begin{enumerate}
+\item The application must play a musical note at the press of an on-screen button.
+	\begin{enumerate}
+	\item The sound must be able to be manipulated through variation of the tempo.
+	\item  The sound must be able to be manipulated through variation of voice.
+	\end{enumerate}
+\item The application must implement the Harmonic Table in the layout of playable notes.
+	\begin{enumerate}
+	\item The notes must be set out in a grid of contiguous hexagons.
+	\item Moving up a hexagon will increase the pitch by a 5th and vice versa.
+	\item Moving right a hexagon will increase the pitch by a semitone and vice versa.
+	\end{enumerate}
+\item The application must implement a control system suitable for a touch screen and mouse interface.
+	\begin{enumerate}
+	\item The application must be controlled through use of single touch sliders and buttons.
+	\item It must have either 'tap to scroll' and/or 'drag and drop' selection.
+	\end{enumerate}
+\end{enumerate}
+
+\subsection{Non-functional Requirements}
+Our application is aimed to be used by a wide variety of the people, with varying levels of musical capability. As such we must place much effort into making the application as accessible and easy to use  as possible.
+\begin{enumerate}
+\item Accessibility - The application must easy to understand and use.
+\item Extensibility - The application should be fully extensible, adding features, and carry-forward of upgrades should be an option whilst maintaining the core mechanic.
+\item Maintainability - The application should be easy to maintain.
+\item Performance - The application should run comfortably on a wide range of computers.
+\item Usability - the application should be easy to use, and have simple, intuitive user input.
+\end{enumerate}
+
+\section{Key Implementation Decisions}
+o Java based applet agreed upon
+
+o Intentionally designed for a touch based screen
+
+o Non multi touch
+
+o Potentially cross platform/device as most OS’s have Java support so we could create a .jar executable file that can be ran on majority of computers/devices.
+
+o Mouse support as well as touch support
+
+Results of any initial implementation steps/prototyping.
+
+* 400 words
+
+o The fact George first coded a base to get to grips with what it is that we are going to face
+
+o Now we are re designing and coding to a specification rather than on the fly 
+
+\section{Initial Designs}
+
+\subsection{Code Plan}
+\includegraphics[scale=0.4]{plan.jpg}
+
+\section{Problems Encountered}
+o Initially we wanted to code it for an Android device/tablet but due to lack of libraries and overall experience with Android was going to take 10x as much effort 
+\section{Time and Planning}
+
+\section{Bibliography}
+
+\begin{enumerate}
+\item http://www.gdreflections.com/2011/02/hexagonal-grid-math.html\\
+\item http://www.codeproject.com/Articles/14948/Hexagonal-grid-for-games-and-other-projects-Part-1\\
+\item http://www-cs-students.stanford.edu/~amitp/game-programming/grids/\\
+
+
+\end{enumerate}
+
+
+\end{document}

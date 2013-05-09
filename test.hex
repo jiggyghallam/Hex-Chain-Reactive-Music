@@ -1,0 +1,10 @@
+Layers: 1
+Base tempo: 35
+Layer: 0
+Layer tempo: 4
+Layer instrument: 118
+Layer start note: 80
+2,12,0,explosionT
+2,15,0,changeDirT
+3,14,4,changeDirT
+4,12,0,playT
